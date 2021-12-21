@@ -1,0 +1,995 @@
+/* Basic reset */
+:after
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+body{
+  background: #cddbce;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+}
+
+/* Styling af navigationsmenuen */
+.navigation_container {
+  position: sticky;
+  background: #a4bca4;
+}
+
+.mobileiconlabel {
+  display: inline-block;
+  color: #ffffff;
+  background: #a4bca4;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding: 16px;
+}
+
+.menuitem {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.menuitems_container, 
+.mobileicon {
+  display: none;
+}
+
+.navigation_container input:checked ~ .menuitems_container {
+  display: block;
+}
+
+.companylogo {
+  position: absolute;
+  top: 0px;
+  right:10px;
+  width: 80px;
+}
+
+.logo {
+  width: 90px;
+  margin-top: 10px;
+}
+
+/* START STYLING AF INDHOLD PÅ FORSIDE */
+
+/* styling af forside billede af Amo Melpose*/
+.forside-billede{
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  margin-bottom: -70px;
+}
+
+/* styling af "vidste du det"-card + konkurrence-card på forside */
+.konkurrence-overskrift{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #56865a;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.konkurrence-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.konkurrence-container-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 370px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.konkurrence-card1{
+  position: relative;
+  width: 370px;
+  height: 300px;
+  margin: 30px;
+  box-shadow: 5px 5px 20px rgba(44, 77, 59, 0.6);
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.konkurrence-content-card{
+  text-align: center;
+}
+
+.konkurrence-card-image1{
+  margin-top: -25px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.konkurrence-name-card{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color: #56865a;
+  z-index: 1;
+}
+
+.konkurrence-link_card{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(44, 77, 59, 0.4);
+  background-color: white;
+  color: #56865a;
+}
+  
+.link_card:hover {
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+/* styling af opskrift kort */
+.inspireret-overskrift{
+  text-align: center;
+  padding-top: 120px;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #56865a;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-bottom: -40px;
+}
+
+.container-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.card-image1 {
+  margin-top: -20px;
+  width: 150%;
+  padding-bottom: 10px;
+}
+
+.card-image2 {
+  margin-top: -20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.card-image3 {
+  margin-top: -20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.card-image4 {
+  margin-top: -20px;
+  width: 150%;
+  padding-bottom: 10px;
+}
+.card-image5 {
+  margin-top: -20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.card-image6 {
+  margin-top: -20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.card-image7 {
+  margin-top: -20px;
+  width: 160%;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.card-image8 {
+  margin-top: -20px;
+  width: 120%;
+  padding-bottom: 10px;
+}
+.card-image9 {
+  margin-top: -20px;
+  width: 110%;
+  padding-bottom: 10px;
+}
+.card-image10 {
+  margin-top: -20px;
+  width: 110%;
+  padding-bottom: 10px;
+}
+.card-image11 {
+  margin-top: -20px;
+  width: 110%;
+  padding-bottom: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11{
+  position: relative;
+  width: 230px;
+  height: 320px;
+  margin: 30px;
+  box-shadow: 5px 5px 20px rgba(44, 77, 59, 0.6);
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-card {
+  text-align: center;
+}
+
+.name-card {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color: #56865a;
+  z-index: 1;
+}
+
+.link_card {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(44, 77, 59, 0.4);
+  background-color: white;
+  color: #56865a;
+}
+/* SLUT STYLING AF INDHOLD PÅ FORSIDE */
+
+/* STYLING AF UNDERSIDE START */
+/* om amo+ underside styling */ 
+.overskrift-amo{
+  font-size: 25px;
+  color: #56865a;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.forsidemel_img{
+  width: 300px;
+  margin-top: -50px;
+}
+
+.bagsidemel_img{
+  width: 225px;
+  margin-top: -20px;
+}
+
+.mel-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-text{
+  font-size: 16px;
+  color: #ffffff;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align:start;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.nutrition_table caption{
+  font-family: Georgia;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #56865a;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.nutrition_table {
+  margin: 25px auto 40px;
+  width: 90%;
+  border: 3px solid;
+  border-radius: 10px;
+  color: #8daf8c;
+  background-color: #bed1bd;
+}
+
+th, td{
+  text-align: left;
+}
+
+tr:nth-child(even){
+  background-color: #aec6ad;
+}
+
+
+.nutrition_ingredient{
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nutrition_table_td {
+  text-align: right;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* PROTEIN OG KOST UNDERSIDE STYLING */
+.protein-overskrift{
+  font-size: 30px;
+  color: #56865a;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: -70px;
+}
+
+/*START INFOGRAPHIC SIDE*/
+.infographic {
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.info_item1 {
+  margin: 5px;
+  padding: 5%;
+  background-color: #bed1bd;
+  justify-content: center;
+  flex: 25%;
+}
+.info_item2 {
+  margin: 5px;
+  padding: 5%;
+  background-color: #aec6ad;
+  justify-content: center;
+  flex: 25%;
+}
+.info_item3 {
+  margin: 5px;
+  padding: 5%;
+  background-color: #9dba9d;
+  justify-content: center;
+  flex: 25%;
+}
+.info_item4 {
+  margin: 5px;
+  padding: 5%;
+  background-color: #8daf8c; 
+  justify-content: center;
+  flex: 25%;
+}
+.info_item5 {
+  margin: 5px;
+  padding: 5%;
+  background-color: #86a585;
+  justify-content: center;
+  flex: 25%;
+}
+
+.info_h2 {
+  color: #56865a;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.info_p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 4px;
+}
+
+.info_p li{
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2rem;
+  padding: 4px;
+}
+/*SLUT PROTEIN UNDERSIDE*/
+
+
+/* START OPSKRIFTER UNDERSIDE STYLING */ 
+/* individuelle opskrifter styling */
+.inspireret-overskrift{
+  font-size: 30px;
+  color: #56865a;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: -60px;
+  padding-bottom: 30px;
+}
+
+#container-opskrift {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/pizza.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_boller {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/gulerodcover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_pandekager {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/pandekagerfrugt.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_brød {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/franskbrød.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_pita {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/pitabrod.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_sandwhich {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/sandwhich.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_knæk {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/knaekbroed.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container-opskrift_pizza {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-image: url("img/pizzasnurre.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero-text-opskrift {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #56865a;
+}
+
+#hero-text-opskrift h1 {
+  text-transform: lowercase;
+  font-size: 40px;
+  color: #56865a;
+  border: 2px solid #56865a;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 100%;
+  font-weight: 100;
+  background-color: #a4bca4;
+  opacity: 0.9;
+  font-family: Georgia;
+}
+
+.content-opskrift-container{
+  display: grid; 
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+}
+
+.h2{
+  color: #56865a;
+  font-size: 16px;
+  text-align: center;
+  flex: 100%;
+  font-weight: 800;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.content-ingredienser{
+  color: #ffffff;
+  line-height: 2;
+  background-color: #9dba9d;
+  border-radius: 10px;
+}
+
+.content-fremgangsmåde{
+  color: #ffffff;
+  line-height: 3;
+  background-color: #9dba9d;
+  border-radius: 10px;
+}
+
+.ingogfrem{
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul li{
+  text-align: left;
+  padding: 5px;
+}
+
+ol li{
+  text-align: left;
+  padding-right: 15px;
+}
+
+.pandekagetopping{
+  font-style: italic;
+  color: #ffffff;
+}
+
+.toppinglink{
+  color: #ffffff;
+}
+/* SLUT OPSKRIFTER UNDERSIDE STYLING */
+
+/* START KONKURRENCER UNDERSIDE STYLING */
+section{
+	width: 100%;
+  justify-content: center;
+}
+
+.konk-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.konkurrence-container{
+  padding: 10px;
+	display: flex;
+	flex-direction: column;
+	min-height: 40px;
+}
+
+.konkurrence-overskrift{
+  font-size: 30px;
+  color: #56865a;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.text {
+	font-size: 20px;
+  color: #56865a;
+  text-align: center;
+}
+
+.konk-beskrivelse{
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.præmie-text{
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.filer{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.upload-text{
+  text-align: center;
+  font-size: 16px;
+  color: #56865a;
+  font-style: italic;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: -15px;
+  padding-top: 30px;
+}
+
+.konk-billede-card {
+  box-shadow: 0 4px 8px 0 rgba(44, 77, 59, 0.6);
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.konk-billede-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(44, 77, 59, 0.6);
+}
+
+.konk-container {
+  padding: 2px 16px;
+}
+
+.konkurrence-img{
+align-items: center;
+width: 100%;
+border-radius: 10px 10px 0 0 ;
+}
+
+.card-overskrift{
+  font-size: 16px;
+  color: #56865a;
+  text-align: center;
+}
+
+.card-text{
+  font-size: 16px;
+  color: #56865a;
+  text-align: center;
+}
+/* SLUT KONKURRENCER UNDERSIDE STYLING */
+
+/* START STYLING FOOTER */ - lånt herfra: https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/
+/* footeren er "fixed" til bunden af siden */
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+.footer-distributed{
+	background-color: #a4bca4;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* footer venstre */
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+/* logo */
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+/* footer links */
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+  font-size: 16px;
+}
+
+/* footer midten */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+/* footer højre */
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-sociale{
+	margin-top: 25px;
+}
+
+#facebook{
+  width: 40px;
+  height: 40px;
+}
+
+#instagram{
+  width: 40px;
+  height: 38px;
+}
+
+#youtube{
+  width: 50px;
+  height: 40px;
+}
+
+/* kode/media til responsiv footer */
+@media (max-height: 1200px){
+    footer { position:relative; }
+}
+
+@media (max-width: 800px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+      margin-left: 0;
+  }
+}
+/* SLUT STYLING AF FOOTER */
+
+
+/* MEDIA */
+@media screen and (min-width: 800px) {   
+/* Nav bar - Menulinjen */
+  .mobileiconlabel, 
+  .mobileicon {
+    display: none;
+  }
+
+  .menuitems_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+    
+  .menuitem {
+    width: 130px;
+  }
+    
+  .menuitem:hover {
+    background: #56865a;
+  }
+
+  .companylogo {
+    left: 30px;
+  }
+  .logo{
+  width: 120px;
+  margin-top: 8px;
+  }
+    
+  /* Forside billede + indhold */
+  .forside-billede{
+    width: 60%;
+    height: 100%;
+    padding-top: 80px;
+    padding-left: 320px;
+    padding-bottom: 100px;
+  }
+    
+  .link_card:hover {
+    font-weight: bold;
+    padding: 10px 25px;
+  }
+  
+  .inspireret-overskrift{
+    padding-top: 200px;
+  }
+
+  .cards{
+    margin-bottom: 60px;
+  }
+
+  .konkurrence-overskrift{
+    font-size: 30px;
+  }
+
+  .konkurrence-container-card{
+    max-width: 1200px;
+  }
+
+  .konkurrence-card1{
+    position: relative;
+    width: 600px;
+    height: 460px;
+  }
+    
+  /* Om Amo+ underside*/
+  .overskrift-amo{
+    font-size: 30px;
+  }
+
+  .forsidemel_img{
+    margin-top: -130px;
+    width: 600px;
+    height: 700;
+  }
+    
+  .bagsidemel_img{
+    width: 490px;
+    height: 645px;
+    margin-right: 70px;
+    padding-top: 15px;
+  }
+
+  .info-text{
+    font-size: 18px;
+    text-align:start;
+    padding-left: 250px;
+    padding-right: 200px;
+    margin-top: -50px;
+    padding-bottom: 50px;
+
+  }
+    
+  .nutrition_table caption{
+    font-size: 20px;
+  }
+    
+  .nutrition_table {
+    width: 60%;
+  }
+
+  .
+
+  /* protein og kost underside */
+  .infographic {
+    flex-direction: row;
+  }
+
+  /* opskrift underside */
+  #hero-text-opskrift h1 {
+    font-size: 60px;
+  }
+
+  /* konkurrence underside */
+  .konkurrence-overskrift{
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .konk-beskrivelse{
+    text-align: center;
+    font-size: 18px;
+    padding-right: 270px;
+    padding-left: 270px;
+  }
+
+  .konk-billede-card {
+    width: 50%;
+  }
+
+  .præmie-text{
+    margin-left: 400px;
+  }
+}
+
+
